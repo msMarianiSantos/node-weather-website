@@ -90,6 +90,6 @@ app.get('*', (req, res) => {// tudo que não esta listado acima
         errorMsg: 'Page not found'
     })
 })
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("server started - up up on port 3000")
 })
