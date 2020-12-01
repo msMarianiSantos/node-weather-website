@@ -18,7 +18,7 @@ weatherForm.addEventListener('submit', (event) => {
             msg1.textContent = data.error
         } else {
             msg1.textContent =`In ${data.location}`
-            msg2.textContent = `The weather looks like ${data.forecastData}`
+            msg2.textContent = `The weather looks like ${data.forecastData} . It feelslike ${data.feelslike}, whit the humidity is ${data.humidity}`
             console.log(data)
         }
     })
